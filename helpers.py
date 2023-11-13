@@ -81,8 +81,8 @@ def extract_lmoms_of_data(data :pd.DataFrame,feat_idx : int, windowSize : int, n
             lmom_dict["W_Label"].append(0)
 
     labelCounter = Counter(lmom_dict["W_Label"])
-    print(f"total benign window: {labelCounter[0]}")
-    print(f"total ddos window: {labelCounter[1]}")
+    # print(f"total benign window: {labelCounter[0]}")
+    # print(f"total ddos window: {labelCounter[1]}")
 
     return pd.DataFrame(lmom_dict)
 
